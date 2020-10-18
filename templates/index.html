@@ -1,0 +1,39 @@
+
+{% extends "bootstrap/base.html" %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col"  style="height: 200px;"></div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4" style="height: 100px;">
+        </div>
+        <div class="col-sm-4">
+        <form action="/" method ="POST"><button type="submit">Sesten Text Dönüşümü</button>
+        <p>(Butona basıp konuşun)</p>
+        </div>
+        <div class="col-sm-4">
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="form-group">
+            <label for="comment">Metin:</label>
+            <textarea class="form-control" rows="25" id="comment" name="text">{%if message%}{{message}}{%endif%} </textarea>
+        </div>
+    </div>
+</div>
+</form>
+    
+{% endblock %}
