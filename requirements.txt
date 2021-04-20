@@ -1,3 +1,2 @@
 flask
-speech_recognition
 gunicorn
